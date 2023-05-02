@@ -44,7 +44,7 @@ router.post("/login", async(req,res)=>{
             id: user._id,
             isAdmin :user.isAdmin
         },
-        process.env.JWT_SEC, {expiresIn:"3d"}
+        process.env.JWT_SEC, {expiresIn:"5d"}
         
         
         );

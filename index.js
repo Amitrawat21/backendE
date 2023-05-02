@@ -30,6 +30,10 @@ databaseconn(process.env.MONGO_URL)
   app.use("/api/checkout" , StrieRoute)
   app.use("/api/order" , userOrder)
 
+  app.use("/" , (req,res)=>{
+    res.json({message : "hello"})
+})
+
         
 
     
