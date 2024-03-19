@@ -21,6 +21,10 @@ const app = express()
 
 
 // route
+
+app.get('/' , (req,res)=>{
+  res.send("product aoi running")
+})
   app.use(cors());
   app.use(express.json()) 
   app.use("/api/auth", Authrouter)

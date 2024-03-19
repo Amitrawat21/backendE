@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-const  DB = "mongodb+srv://AmitRawat:AmitRawat21@cluster0.v2znl.mongodb.net/shoppingwebsite?retryWrites=true&w=majority"
+const DB =  process.env.DB_HOST
 mongoose.connect(DB , {
     useUnifiedTopology :true,
     useNewUrlParser : true
