@@ -1,6 +1,6 @@
 import express from 'express'
 import Authrouter from "./Route/Auth.js"
-import databaseconn from './Connection/Dbconnection.js'
+import './Connection/Dbconnection.js'
 import userOrder from "./Route/Order.js"
 import dotenv from "dotenv"
 import userRoute from "./Route/User.js"
@@ -17,7 +17,7 @@ const app = express()
 //connect mongoose
 
 
-databaseconn(process.env.MONGO_URL)
+
 
 
 // route
